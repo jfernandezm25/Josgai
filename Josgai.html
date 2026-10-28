@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Josgai · Carpintería y proyectos en madera</title>
+  <meta name="description" content="Josgai: carpintería y proyectos en madera. Instalación de suelos, puertas, armarios y más.">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="logo"><i>J</i>Josgai</a>
+    <nav aria-label="Principal">
+      <ul id="menu">
+        <li><a href="#inicio">Inicio</a></li><li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li><li><a href="#proceso">Proceso</a></li>
+        <li><a href="#trabajos">Trabajos</a></li><li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="theme" aria-label="Cambiar tema">◐</button>
+      <button class="icon-btn burger" id="burger" aria-label="Menú">☰</button>
+    </div>
+  </div>
+  <div id="progress"></div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="grain"></div><div class="rings" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="eyebrow" style="color:#e9a66b">Carpintería · Proyectos en madera</div>
+    <h1 class="reveal">La madera, <em>bien trabajada.</em></h1>
+    <p class="reveal">En Josgai planificamos y ejecutamos proyectos de carpintería: suelos, puertas, armarios y reformas en madera. Trato directo, buen material y un acabado que dura.</p>
+    <div class="cta reveal">
+      <a href="#contacto" class="btn btn-main">Pedir presupuesto →</a>
+      <a href="#trabajos" class="btn btn-ghost">Ver trabajos</a>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"></div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div id="mq"></div></div>
+
+<section id="nosotros">
+  <div class="wrap about">
+    <div>
+      <div class="eyebrow">Quiénes somos</div>
+      <h2 class="reveal">Un oficio que se hace con las manos.</h2>
+      <p class="reveal" style="margin-top:1.4rem">Josgai es una empresa autónoma de carpintería donde cada proyecto lo lleva el mismo profesional de principio a fin: desde la primera medición hasta el último ajuste de bisagra. Sin intermediarios, sin prisas y con la honestidad de quien firma su trabajo.</p>
+      <p class="reveal">Trabajamos en tu casa, local o negocio: instalamos y montamos con el material que mejor encaje, cuidando cada detalle y dejando todo limpio al terminar.</p>
+      <div class="stats reveal">
+        <div class="stat"><b data-n="30" data-s="+">0</b><small>años de oficio</small></div>
+        <div class="stat"><b data-n="1000" data-s="+">0</b><small>proyectos</small></div>
+        <div class="stat"><b data-n="100" data-s="%">0</b><small>trato directo</small></div>
+      </div>
+    </div>
+    <div class="plank reveal" role="img" aria-label="Tablero de madera">
+      <blockquote>“Un buen trabajo se nota en los remates.”</blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">Servicios</div><h2 class="reveal">Todo lo que se puede hacer en madera.</h2></div>
+      <p class="reveal">Desde cambiar una puerta hasta renovar todos los suelos de una vivienda.</p>
+    </div>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
+<section class="process" id="proceso">
+  <div class="wrap">
+    <div class="eyebrow">Cómo trabajamos</div>
+    <h2 class="reveal">Cuatro pasos, sin sorpresas.</h2>
+    <div class="steps">
+      <div class="step reveal"><h3>Visita y medición</h3><p>Vamos a verlo, tomamos medidas exactas y escuchamos lo que necesitas.</p></div>
+      <div class="step reveal"><h3>Planificación y presupuesto</h3><p>Propuesta, materiales y precio cerrado antes de empezar.</p></div>
+      <div class="step reveal"><h3>Preparación</h3><p>Suministro del material y preparación de la zona de trabajo.</p></div>
+      <div class="step reveal"><h3>Instalación</h3><p>Montaje, ajuste fino y limpieza final. Garantía de nuestro trabajo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="trabajos">
+  <div class="wrap">
+    <div class="eyebrow">Trabajos</div>
+    <h2 class="reveal" style="margin-bottom:2rem">Obras que hablan solas.</h2>
+    <div class="filters" id="filters">
+      <button class="on" data-f="all">Todo</button><button data-f="suelos">Suelos</button>
+      <button data-f="armarios">Armarios</button><button data-f="puertas">Puertas</button><button data-f="exterior">Exterior</button>
+    </div>
+    <div class="grid" id="grid">
+      <div class="tile t1 big" data-c="suelos"><span>Tarima de roble<small>Instalación en salón</small></span></div>
+      <div class="tile t2" data-c="armarios"><span>Armario empotrado<small>Puertas correderas</small></span></div>
+      <div class="tile t3" data-c="puertas"><span>Puerta de entrada<small>Nogal macizo</small></span></div>
+      <div class="tile t4" data-c="exterior"><span>Pérgola de jardín<small>Madera tratada</small></span></div>
+      <div class="tile t5 big" data-c="armarios"><span>Vestidor<small>Interiores organizados</small></span></div>
+      <div class="tile t6" data-c="suelos"><span>Parquet en espiga<small>Colocación en vivienda</small></span></div>
+      <div class="tile t1" data-c="puertas"><span>Puertas de paso<small>Instaladas y ajustadas</small></span></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Materiales</div>
+    <h2 class="reveal" style="margin-bottom:2.2rem">Te asesoramos en el material.</h2>
+    <div class="mats" id="mats"></div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap cgrid">
+    <div>
+      <div class="eyebrow">Contacto</div>
+      <h2 class="reveal">Cuéntanos tu proyecto.</h2>
+      <p class="reveal" style="margin-top:1.2rem">Presupuesto sin compromiso. Te respondemos lo antes posible.</p>
+      <ul class="info reveal">
+        <li><i>☎</i><span>+34 600 000 000</span></li>
+        <li><i>✉</i><span>josecarpi2222@hotmail.com</span></li>
+        <li><i>⌖</i><span>Zona de trabajo: Bilbao</span></li>
+        <li><i>◷</i><span>Lun–Vie · 8:00–20:00</span></li>
+      </ul>
+    </div>
+    <form id="form" class="reveal">
+      <div class="f2">
+        <label>Nombre<input name="n" required autocomplete="name"></label>
+        <label>Teléfono<input name="t" type="tel" required autocomplete="tel"></label>
+      </div>
+      <label>Tipo de trabajo
+        <select name="s"><option>Suelos</option><option>Armario</option><option>Puertas</option><option>Escalera</option><option>Exterior</option><option>Otro</option></select>
+      </label>
+      <label>Mensaje<textarea name="m" required></textarea></label>
+      <button class="btn btn-main" type="submit">Enviar consulta →</button>
+      <div id="ok">¡Gracias! Se abrirá tu correo para enviar la consulta.</div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="y"></span> Josgai · Carpintería y proyectos en madera</span><span>Hecho con madera y mucho cariño.</span></div></footer>
+<button class="icon-btn btn-main" id="top" aria-label="Subir">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
